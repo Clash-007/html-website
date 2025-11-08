@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background:  #6dd5;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+
+.app-container{
+    text-align: center;
+    background: rgba(52, 41, 41, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(25, 7, 7, 0.2)
+}
+
+header h1{
+    margin-bottom: 20px;
+    color: rgb(31, 31, 51);
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* gap between input and search button*/
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box input{
+    padding: 10px;
+    border-radius:5px;/*input interface border width */
+    border: none; /* no border */
+    outline: none;
+    width: 60%;
+}
+
+.search-box button{
+    padding: 10px 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*cursor changes to finger pointer */
+    color: rgb(31, 31, 51);     
+    font-weight: bold;
+}
+
+#locationButton{
+    background-color: lightblue; 
+    font-weight: bold;
+}
+
+.search-box button:hover{
+    background-color: #27ae60;
+}
+
+#locationButton:hover{
+    background-color: #27ae60;
+}
+
+.weather-info h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-info p{
+    margin-bottom: 8px;
+}
+
+#weatherIcon{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 6px auto;
+}
+
+#dateTime{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 8px;
+}
+footer{
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}

@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <meta charset = "UTF-8">
-        <title>Save Tigers - Website</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <h1>Save Tigers</h1>
-        <hr />
-
-        <h2>Why should we save tigers?</h2>
-        <p>At the turn of the 20th century, it is estimated that India probably had many thousands of tigers in the wild</p>
-        <p>The Wildlife Institute of India (WII) and the National Tiger Conservation Authority (NTCA), Government of India, have been conducting tiger estimation surveys in partnership with NGOs. WWF-India was the key NGO partner of NTCA, WII and state forest departments in conducting the comprehensive country-wide tiger estimation exercise in 2018, which revealed a mean tiger population estimate of 2,967 (range 2400-3050)</p>
-        <p>Based on a census using the pug mark technique, the number of tigers in 2002 stood at 3,642.</p>
-        
-        <hr />
-        <img src = "./images/1.jpeg" alt = "Tiger in Forest" height = "200"/>
-        <img src = "./images/2.jpeg" alt = "Tiger in Zoo" height = "200"/>
-        <hr />
-
-        <h2>If the tigers go extinct, the entire system would collapse.</h2>
-        <p>For e.g. when the Dodos went extinct in Mauritius, one species of Acacia tree stopped regenerating completely. So, when a species goes extinct, it leaves behind a scar, which affects the entire ecosystem. Another reason why we need to save the tiger is that our forests are water catchment areas. </p>
-        <p>Therefore, it’s not just about saving a beautiful animal. It is about making sure that our well being is maintained as the forests are known to provide ecological services like clean air, water, pollination, temperature regulation etc.</p>
-
-        <hr />
-        <a href = ./about.html>About Me</a>
-        <a href = "./contactme.html">Contact Me</a>
-        <a href = "https://www.wwfindia.org/about_wwf/priority_species/bengal_tiger/why_save_the_tigers/#">Reference</a>
+        <div class="app-container">
+            <header>
+                <h1>Weather</h1>
+                <div class="search-box">
+                    <input type="text" id ="cityInput" placeholder="Enter City Name" required/>
+                    <button id="searchButton">Search</button>
+                    <button id="locationButton" title="Get weather for your current location" >My Location</button>
+                </div>
+            </header>
+            <main>
+                <div class="weather-info">
+                    <h2 id="cityName">--</h2>
+                    <img id="weatherIcon" src="" alt="Weather Icon" style="display:none" />
+                    <p id="dateTime">--</p>
+                    <p id="temperature">--°C</p>
+                    <p id="condition">--</p>
+                    <p id="details">Humidity: --</p> 
+                    <p id="details1">Wind: -- Km/h</p>
+                </div>
+            </main>
+            <footer>
+                <p>Powered by OpenWeatherMap API</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
